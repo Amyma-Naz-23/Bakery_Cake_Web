@@ -1,0 +1,579 @@
+/* Reset and Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Uchen', serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.allcontact {
+  background-color: #4b331b;
+}
+
+/* Navbar */
+#navbar {
+  background-color: #3d2102;
+  padding-left: 60px;
+  font-weight: bold;
+}
+
+#logo {
+  color: white !important;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  text-decoration: none;
+}
+
+#logo:hover {
+  color: white !important;
+}
+
+.navbar-nav {
+  margin-left: 10px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  background-color: rgb(128, 87, 12);
+  color: rgb(17, 2, 2);
+  border-radius: 5px;
+}
+.dropdown-menu:hover{
+  background-color: rgb(128, 87, 12);
+  color: rgb(248, 247, 247);
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px black;
+
+}
+
+.icons {
+  margin-left: 20px;
+}
+
+.icons img {
+  
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.icons img:hover {
+  transform: translateY(-3px);
+}
+
+/* Home Section */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('./image/background2.png') no-repeat center center/cover;
+}
+
+.home .img {
+  flex: 1 1 400px;
+}
+
+.home .img img {
+  width: 100%;
+}
+
+.home .content {
+  flex: 1 1 400px;
+  padding: 20px;
+}
+
+.content h3 {
+  color: rgb(199, 175, 131);
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+
+.content h2 {
+  font-size: 50px;
+  color: rgb(62, 68, 73);
+  text-shadow: 1px 1px 1px black;
+}
+
+.changecontent::after {
+  content: " ";
+  color: #573818;
+  animation: changetext 10s infinite linear;
+  font-weight: bold;
+}
+
+@keyframes changetext {
+  0% { content: "Birthday Cake"; }
+  20% { content: "Chocolate Cake"; }
+  50% { content: "Party Cake"; }
+  70% { content: "Cup Cake"; }
+  100% { content: "Slice Cake"; }
+}
+
+.content p {
+  color: rgb(244, 248, 248);
+  font-weight: 500px bolder;
+  text-shadow: 1px 1px 1px black;
+}
+
+.content .btn {
+  width: 130px;
+  height: 40px;
+  background-color: #573818;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Top Cards */
+#box {
+  margin-top: 50px;
+}
+
+#box .card {
+  box-shadow: 0px 0px 5px black;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#box .card:hover {
+  transform: translateY(-10px);
+}
+/* Banner */
+.banner {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('./image/banner2.png') no-repeat center center/cover;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+  margin-top: 50px;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.banner .img {
+  flex: 1 1 400px;
+  text-align: right;
+}
+
+.banner .img img {
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+.banner .content {
+  flex: 1 1 400px;
+  padding: 20px;
+  text-align: left;
+}
+
+.banner .content h3 {
+  color: #f9c74f;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.banner .content h2 {
+  font-size: 50px;
+  color: #f9c74f;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+  margin-bottom: 20px;
+}
+
+.banner .content p {
+  color: #fff8dc;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+#btnorder button {
+  width: 160px;
+  height: 42px;
+  background-color: #f9c74f;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  transition: 0.3s ease;
+}
+
+#btnorder button:hover {
+  background-color: #a16d0e;
+  color: #fff;
+}
+
+/* ===== Media Queries ===== */
+/* Tablet & Medium Devices (750px and down) */
+@media screen and (max-width: 750px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+    min-height: 70vh;
+  }
+
+  .banner .content {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .banner .content h3 {
+    font-size: 22px;
+  }
+
+  .banner .content h2 {
+    font-size: 36px;
+  }
+
+  .banner .content p {
+    font-size: 16px;
+  }
+
+  .banner .img {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .banner .img img {
+    max-width: 110%;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Devices (480px and down) */
+@media screen and (max-width: 480px) {
+  .banner {
+    padding: 20px 10px;
+  }
+
+  .banner .content h3 {
+    font-size: 18px;
+  }
+
+  .banner .content h2 {
+    font-size: 28px;
+  }
+
+  .banner .content p {
+    font-size: 14px;
+  }
+
+  .banner .img img {
+    max-width: 120%;
+    margin: 0 auto;
+  }
+
+  #btnorder button {
+    width: 140px;
+    height: 38px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .banner .img img {
+    max-width: 140%; /* Aur zyada bari kar di */
+    margin: 0 auto;
+  }
+}
+/* product cart */
+#product-card h1{
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 50px;
+  color: rgb(153, 104, 49);
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid rgb(153, 104, 49);
+}
+#product-card .card{
+  background-color: rgb(199, 175, 131);
+  box-shadow: 0 0 3px black;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.overlay{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#product-card h6 span button{
+  width: 100px;
+  height: 26px;
+  display: flex;
+  font-size: 15px;
+  background: transparent;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  float: right;
+  border: 2px solid #573818;
+  font-weight: bold;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#product-card h6 span button:hover{
+  background-color: #2e1700;
+  color: white;
+
+}
+.overlay button {
+  background: rgb(153, 104, 49);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.overlay img {
+  width: 24px;
+  height: 24px;
+}
+
+.checked {
+  color: gold;
+}
+.card {
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.overlay button {
+  padding: 5px;
+  border-radius: 50%;
+}
+#product-card{
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+
+
+
+/* gallery */
+#gallery{
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+#gallery h1{
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 50px;
+  color: rgb(153, 104, 49);
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid rgb(153, 104, 49);
+
+}
+#gallery .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#gallery .card{
+  background-color: rgb(199, 175, 131);
+  box-shadow: 0 0 3px black;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+#gallery .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(5, 5, 5, 0.7);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+#gallery .card:hover .overlay{
+  opacity: 1;
+}
+/* about */
+#about h1{
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 50px;
+  color: rgb(153, 104, 49);
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid rgb(153, 104, 49);
+
+}
+#about{
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+#about .card{
+  background-color: rgb(199, 175, 131);
+  box-shadow: 0px 0px 5px black;
+}
+#about p{
+  color: rgb(244, 248, 248);
+  font-weight: 500px bolder;
+  text-shadow: 1px 1px 1px black;
+}
+
+#bton button{
+  font-weight: 550;
+  width: 130px;
+  height: 40px;
+  background-color: rgb(61, 36, 3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+#bton button:hover{
+  background-color: #ad9a78;
+  color: #fff;
+
+}
+@media screen and(max-width:1000px) {
+  #about p {
+    font-size: 10px;
+  }
+  
+}
+@media screen and (max-width:760px){
+  #about p {
+    font-size: 20px;
+  }
+}
+body {
+  background: linear-gradient(to bottom, #dacfcf, #ccc6c6, #dacbcb);
+  color: #fff;
+}
+/* contact us */
+#contact {
+  margin-top: 100px;
+  background: #311903;;
+  padding: 50px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  color: #dacbcb;
+}
+
+#contact h1 {
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 50px;
+  color: rgb(153, 104, 49);
+  text-shadow: 1px 1px 1px black;
+  border-bottom: 2px solid rgb(153, 104, 49);
+}
+
+#contact input, 
+#contact textarea {
+  background-color: rgb(199, 175, 131);
+  border: 1px solid #000000;
+  color: #dacbcb;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+#sendBtn {
+  width: 220px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#sendBtn:hover {
+  background-color: rgb(153, 104, 49);
+  color: white;
+}
+/* footer */
+#footer{
+  width: 100%;
+  background-color: #311903;
+  box-shadow: 0px 0px 5px black;
+  margin-top: 100px;
+}
+#footer h1{
+  color: white;
+  padding-top:30px ;
+}
+#footer p{
+  color: white;
+}
+.icons i{
+  background-color: white;
+  color: #3d2102;
+  border-radius: 50px;
+  padding: 6px;
+  font-size:30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.icons i:hover{
+  background-color: rgb(153, 104, 49);
+  color: #dacfcf;
+}
+.copyright{
+  color: #ccc6c6;
+  margin-top: 20px;
+}
+.credite{
+  color: rgb(182, 182, 182);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.arrow{
+  position:initial;
+  
+  /* background-color: #573818; */
+  border-radius: 50px;
+  height: 40px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
